@@ -25,3 +25,26 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.isInView > div {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+.isNotInView > div {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.skill_logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+.skill_logo:nth-child(3) {
+  transition-delay: 400ms;
+}
+.skill_logo:nth-child(4) {
+  transition-delay: 600ms;
+}
