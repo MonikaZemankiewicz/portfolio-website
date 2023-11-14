@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@motionone/utils": "^10.16.3",
+    "framer-motion": "^10.16.4",
     "next": "14.0.1",
     "react": "^18",
     "react-dom": "^18",
