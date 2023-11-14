@@ -2,6 +2,30 @@
 import React from "react";
 import { useState, useRef, useEffect } from "react";
 import AnimationOnScroll from "../utils/AnimationOnScroll";
+import Image from "next/image";
+
+const SKILLS_DATA = [
+  {
+    title: "html",
+    img: "/images/html.png",
+  },
+  {
+    title: "css",
+    img: "/images/css.png",
+  },
+  {
+    title: "react",
+    img: "/images/react.png",
+  },
+  {
+    title: "django",
+    img: "/images/django.png",
+  },
+  {
+    title: "sql",
+    img: "/images/sql.png",
+  },
+];
 
 const Skills = () => {
   return (
@@ -18,10 +42,19 @@ const Skills = () => {
             "isNotInView flex flex-wrap justify-center space-x-4 mt-8"
           }
         >
-          <div className="skill_logo">Skill 1</div>
-          <div className="skill_logo">Skill 2</div>
-          <div className="skill_logo">Skill 3</div>
-          <div className="skill_logo">Skill 4</div>
+          {SKILLS_DATA.map((skill, index) => {
+            return (
+              <div key={index} className="skill_card">
+                <Image
+                  src={skill.img}
+                  alt={skill.title + "logo"}
+                  width={70}
+                  height={70}
+                  className="skill_logo"
+                />
+              </div>
+            );
+          })}
         </AnimationOnScroll>
       </main>
     </div>

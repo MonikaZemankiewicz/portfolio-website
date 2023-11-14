@@ -5,39 +5,35 @@ import { useState, useTransition } from "react";
 import TabButton from "./TabButton";
 
 const TAB_DATA = [
-  {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>GatsbyJS</li>
-        <li>Python</li>
-        <li>Django</li>
-      </ul>
-    ),
-  },
+  // {
+  //   title: "Skills",
+  //   id: "skills",
+  //   content: (
+  //     <ul className="list-disc pl-2">
+  //       <li>HTML</li>
+  //       <li>CSS</li>
+  //       <li>JavaScript</li>
+  //       <li>React</li>
+  //       <li>GatsbyJS</li>
+  //       <li>Python</li>
+  //       <li>Django</li>
+  //     </ul>
+  //   ),
+  // },
   {
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>
-          Master's Degree in Computer Science | Wroclaw University of Science
-          and Technology | 2021-2023
+      <ul className="list-disc pl-10">
+        <li className="mb-2">
+          Bachelor's Master's Degree in Computer Science (Wroclaw University of
+          Science and Technology) | 2017- 2021, 2021-2023
         </li>
-        <li>
-          Bachelor's Degree in Computer Science | Wroclaw University of Science
-          and Technology | 2017-2020
-        </li>
-        <li>
+        <li className="mb-2">
           Erasmus Exchange in Almeria, Spain | Universidad de Almeria |
           2019-2020
         </li>
-        <li>
+        <li className="mb-2">
           Erasmus Exchange in Porto, Portugal | Instituto Politecnico do Porto |
           2022-2023
         </li>
@@ -48,16 +44,20 @@ const TAB_DATA = [
     title: "Experience",
     id: "experience",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Software Developer/Trainee | Volvo Group | 2021-2022</li>
-        <li>Software Development Intern | 2SI | September 2020 </li>
+      <ul className="list-disc pl-10">
+        <li className="mb-2">
+          Software Developer/Trainee | Volvo Group | 2021-2022
+        </li>
+        <li className="mb-2">
+          Software Development Intern | 2SI | September 2020{" "}
+        </li>
       </ul>
     ),
   },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("experience");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -83,12 +83,12 @@ const AboutSection = () => {
             occaecat esse esse sit culpa. Laborum cupidatat est sint et.
           </p>
           <div className="flex flex-row justify-start mt-8">
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
               Skills
-            </TabButton>
+            </TabButton> */}
             <TabButton
               selectTab={() => handleTabChange("experience")}
               active={tab === "experience"}

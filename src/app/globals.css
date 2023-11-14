@@ -26,11 +26,44 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@supports (
+  (
+      -webkit-backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%)
+    )
+    or
+    (backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%))
+) {
+  .skill_card {
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    height: fit-content;
+    overflow: hidden;
+  }
+
+  .skill_card:before {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.skill_logo {
+  position: relative;
+  z-index: 2;
+  align-self: start;
+  margin: 1.2rem;
+}
+
 .isInView > div {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-  transition: all 2s;
+  transition: all 1s;
+  display: flex;
 }
 
 .isNotInView > div {
@@ -39,12 +72,15 @@ body {
   transform: translateX(-100%);
 }
 
-.skill_logo:nth-child(2) {
+.skill_card:nth-child(2) {
+  transition-delay: 100ms;
+}
+.skill_card:nth-child(3) {
   transition-delay: 200ms;
 }
-.skill_logo:nth-child(3) {
-  transition-delay: 400ms;
+.skill_card:nth-child(4) {
+  transition-delay: 300ms;
 }
-.skill_logo:nth-child(4) {
-  transition-delay: 600ms;
+.skill_card:nth-child(5) {
+  transition-delay: 400ms;
 }
