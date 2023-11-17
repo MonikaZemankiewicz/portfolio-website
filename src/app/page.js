@@ -15,6 +15,7 @@ export default function Home() {
         <AboutSection></AboutSection>
         {/* <hr className="mt-24 mb-12"></hr> */}
         <Skills></Skills>
+        <div className="mb-20"></div>
         <ScrollingHeader></ScrollingHeader>
       </div>
     </main>

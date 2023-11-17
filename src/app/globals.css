@@ -118,7 +118,7 @@ body {
 .parallax span {
   display: block;
   margin-right: 30px;
-  font-family: "Plaster", sans-serif;
+  font-family: "Plaster", sans-serif !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
