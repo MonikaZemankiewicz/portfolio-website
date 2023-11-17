@@ -10,6 +10,12 @@ import {
   useAnimationFrame,
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
+import { Vina_Sans } from "next/font/google";
+
+const vina_sans = Vina_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
@@ -59,10 +65,10 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   return (
     <div className="parallax">
       <motion.div className="scroller" style={{ x }}>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
+        <span className={vina_sans.className}>{children} </span>
+        <span className={vina_sans.className}>{children} </span>
+        <span className={vina_sans.className}>{children} </span>
+        <span className={vina_sans.className}>{children} </span>
       </motion.div>
     </div>
   );

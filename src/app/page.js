@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import Skills from "./components/Skills";
 import ScrollingHeader from "./components/ScrollingHeader";
+import { Inter } from "next/font/google";
 
 export default function Home() {
   return (

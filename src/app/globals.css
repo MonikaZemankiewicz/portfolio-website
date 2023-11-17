@@ -86,6 +86,7 @@ body {
 }
 
 /* Scrolling header */
+
 .progress {
   position: fixed;
   left: 0;
@@ -118,8 +119,8 @@ body {
 .parallax span {
   display: block;
   margin-right: 30px;
-  font-family: "Plaster", sans-serif !important;
-  font-style: normal;
+  /* font-family: "Plaster", sans-serif !important;
+  font-style: normal; */
   -webkit-font-smoothing: antialiased;
 }
 
