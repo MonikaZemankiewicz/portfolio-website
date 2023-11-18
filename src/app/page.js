@@ -4,13 +4,16 @@ import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import Skills from "./components/Skills";
 import ScrollingHeader from "./components/ScrollingHeader";
-import { Inter } from "next/font/google";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">
       <Navbar></Navbar>
       <div className="container mt-24 mx-auto px-12 py-4">
+        {/* <span className="background_item"></span>
+        <span className="background_item"></span>
+        <span className="background_item"></span> */}
+
         <Hero></Hero>
         {/* <hr className="mt-24 mb-12 "></hr> */}
         <AboutSection></AboutSection>

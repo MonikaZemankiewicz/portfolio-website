@@ -1,7 +1,12 @@
-import { Inter } from "next/font/google";
+import { Inter, Vina_Sans } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const vina_sans = Vina_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Create Next App",

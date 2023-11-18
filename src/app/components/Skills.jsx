@@ -30,27 +30,28 @@ const SKILLS_DATA = [
 const Skills = () => {
   return (
     <div>
-      <h2 className="text-4xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500 mb-4">
-        Skills
+      <h2 className="text-5xl text-center font-bold mb-4">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+          Skills
+        </span>
       </h2>
       <main className="flex flex-wrap justify-center space-x-4 mt-8">
         <AnimationOnScroll
-          classNameInView={
-            "isInView flex flex-wrap justify-center space-x-4 mt-8"
-          }
-          classNameNotInView={
-            "isNotInView flex flex-wrap justify-center space-x-4 mt-8"
-          }
+          classNameInView={"isInView flex flex-wrap justify-center"}
+          classNameNotInView={"isNotInView flex flex-wrap justify-center"}
         >
           {SKILLS_DATA.map((skill, index) => {
             return (
-              <div key={index} className="skill_card">
+              <div
+                key={index}
+                className="skill_card rounded-lg shadow-lg text-2xl h-auto overflow-hidden mt-4 mr-4 relative"
+              >
                 <Image
                   src={skill.img}
                   alt={skill.title + "logo"}
                   width={70}
                   height={70}
-                  className="skill_logo"
+                  className="skill_logo relative z-2 self-start m-3"
                 />
               </div>
             );

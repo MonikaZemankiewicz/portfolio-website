@@ -2,30 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @supports (
   (
       -webkit-backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%)
@@ -33,13 +9,14 @@ body {
     or
     (backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%))
 ) {
-  .skill_card {
+  /* .skill_card {
     border-radius: 15px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     font-size: 2rem;
     height: fit-content;
     overflow: hidden;
-  }
+    margin-top: 1rem;
+  } */
 
   .skill_card:before {
     background-color: rgba(255, 255, 255, 0.05);
@@ -51,11 +28,7 @@ body {
   }
 }
 
-.skill_logo {
-  position: relative;
-  z-index: 2;
-  align-self: start;
-  margin: 1.2rem;
+h1 {
 }
 
 .isInView > div {
@@ -119,27 +92,90 @@ body {
 .parallax span {
   display: block;
   margin-right: 30px;
-  /* font-family: "Plaster", sans-serif !important;
-  font-style: normal; */
   -webkit-font-smoothing: antialiased;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 html {
   scroll-snap-type: y mandatory;
 }
+/* 
+.scrolling_header {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+} */
 
-/* Remove scrollbar */
+/* Remove scrollbar  */
+
 ::-webkit-scrollbar {
-  height: 5px;
-  width: 5px;
-  background: var(--background);
+  height: 0;
+  width: 0;
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  -webkit-border-radius: 1ex;
+/* Background animation */
+/* 
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
 }
 
-::-webkit-scrollbar-corner {
-  background: var(--background);
+.background_item {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 45;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(510pxx);
+  filter: blur(10px);
+  background: rgb(59, 130, 252);
+  background: linear-gradient(
+    144deg,
+    rgba(59, 130, 252, 0.2) 0%,
+    rgba(192, 132, 252, 0.2) 100%
+  );
+  z-index: 0;
 }
+
+.background_item:nth-child(1) {
+  top: 58%;
+  left: 45%;
+  animation-duration: 48s;
+  animation-delay: -27s;
+  transform-origin: -16vw -8vh;
+  width: 5vmin;
+  height: 5vmin;
+}
+.background_item:nth-child(2) {
+  top: 86%;
+  left: 79%;
+  animation-duration: 30s;
+  animation-delay: -29s;
+  transform-origin: 18vw -21vh;
+  width: 20vmin;
+  height: 20vmin;
+}
+.background_item:nth-child(3) {
+  top: 2%;
+  left: 30%;
+  animation-duration: 41s;
+  animation-delay: -42s;
+  transform-origin: 4vw 22vh;
+  width: 15vmin;
+  height: 15vmin;
+} */
