@@ -191,7 +191,7 @@ html {
   width: 100vw;
   min-width: 100vw;
   z-index: 0;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 50;
 }
@@ -216,7 +216,7 @@ html {
   border-radius: 50%;
   width: 100%;
   height: 4%;
-  top: -3%;
+  top: -2%;
   left: 0;
 }
 .blob.bottom {
@@ -229,38 +229,38 @@ html {
 .blob:nth-child(1) {
   width: 200px;
   height: 200px;
-  left: 5%;
+  left: 35%;
   bottom: -15%;
 
   animation: wobble 4s ease-in-out alternate infinite,
-    blob-one ease-in-out 180s infinite;
+    blob-one ease-in-out 18s infinite;
 }
 .blob:nth-child(2) {
-  width: 180px;
-  height: 180px;
+  width: 330px;
+  height: 330px;
   right: 24%;
   bottom: -65%;
 
   animation: wobble 5s ease-in-out alternate infinite,
-    blob-two ease-in-out 220s infinite;
+    blob-two ease-in-out 22s infinite;
 }
 .blob:nth-child(3) {
   width: 150px;
   height: 150px;
   bottom: -15%;
-  left: 34%;
+  left: 5%;
 
   animation: wobble 6s ease-in-out alternate infinite,
-    blob-three ease-in-out 160s infinite;
+    blob-three ease-in-out 16s infinite;
 }
 .blob:nth-child(4) {
   width: 235px;
   height: 235px;
   bottom: -19%;
-  left: 90%;
+  left: 30%;
 
   animation: wobble 8s ease-in-out alternate infinite,
-    blob-four ease-in-out 160s infinite;
+    blob-four ease-in-out 16s infinite;
 }
 .blob:nth-child(5) {
   width: 55px;
@@ -269,25 +269,25 @@ html {
   left: 34%;
 
   animation: wobble 9s ease-in-out alternate infinite,
-    blob-five ease-in-out 320s infinite;
+    blob-five ease-in-out 32s infinite;
 }
 .blob:nth-child(6) {
   width: 35px;
   height: 35px;
   bottom: -25%;
-  right: 34%;
+  right: 20%;
 
   animation: wobble 10s ease-in-out alternate infinite,
-    blob-six ease-in-out 120s infinite;
+    blob-six ease-in-out 12s infinite;
 }
 .blob:nth-child(7) {
-  width: 210px;
-  height: 210px;
-  bottom: -85%;
-  right: 40%;
+  width: 90px;
+  height: 90px;
+  bottom: -20%;
+  right: 5%;
 
   animation: wobble 11s ease-in-out alternate infinite,
-    blob-seven ease-in-out 320s infinite;
+    blob-seven ease-in-out 64s infinite;
 }
 @keyframes blob-one {
   0%,
@@ -351,7 +351,7 @@ html {
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-300%);
+    transform: translatey(-1000%);
   }
 }
 
