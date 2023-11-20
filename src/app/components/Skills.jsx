@@ -14,6 +14,14 @@ const SKILLS_DATA = [
     img: "/images/css.png",
   },
   {
+    title: "js",
+    img: "/images/js.png",
+  },
+  {
+    title: "python",
+    img: "/images/python.png",
+  },
+  {
     title: "react",
     img: "/images/react.png",
   },
@@ -30,10 +38,8 @@ const SKILLS_DATA = [
 const Skills = () => {
   return (
     <div className="mb-60">
-      <h2 className="text-4xl text-center font-bold mb-4">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
-          Skills
-        </span>
+      <h2 className=" text-center text-4xl font-bold text-white mb-4">
+        Skills
       </h2>
       <main className="flex flex-wrap justify-center space-x-4 mt-8">
         <AnimationOnScroll

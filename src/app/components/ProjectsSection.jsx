@@ -1,27 +1,30 @@
 "use client";
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectsTag from "./ProjectsTag";
+import ProjectsCategoryButton from "./ProjectsCategoryButton";
 import { useState, useEffect } from "react";
 
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "React Portfolio Website description",
+    title: "Artist Portfolio Website",
+    description: "Portfolio Website created for my sister. ",
     image: "/images/projects/1.png",
     gitURL: "https://github.com/MonikaZemankiewicz/ArtistPortfolio",
     previewURL: "https://zemankiewicz-art.netlify.app/",
-    tags: ["React", "NextJS"],
+    techStack: ["Jamstack", "React", "Contentful", "Netlify"],
+    categories: ["React", "NextJS"],
   },
   {
     id: 2,
-    title: "React Portfolio Website",
-    description: "React Portfolio Website description",
-    image: "/images/projects/1.png",
+    title: "360 Media Website",
+    description:
+      "Website for sharing 360 images, videos and virtual tours with built in 360 image viewer. Preview not available due to the end of free hosting period. Screenshots of the website are available in the README file. ",
+    image: "/images/projects/2.png",
     gitURL: "",
     previewURL: "",
-    tags: ["React", "Web"],
+    techStack: ["React", "Django", "360 Media", "Netlify"],
+    categories: ["React", "Web"],
   },
   {
     id: 3,
@@ -30,7 +33,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     gitURL: "",
     previewURL: "",
-    tags: ["React", "NextJS"],
+    categories: ["React", "NextJS"],
   },
   {
     id: 4,
@@ -39,7 +42,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     gitURL: "",
     previewURL: "",
-    tags: ["React", "NextJS"],
+    categories: ["React", "NextJS"],
   },
   {
     id: 5,
@@ -48,18 +51,18 @@ const projectsData = [
     image: "/images/projects/1.png",
     gitURL: "",
     previewURL: "",
-    tags: ["React", "NextJS"],
+    categories: ["React", "NextJS"],
   },
 ];
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
-  const handleTagChange = (newTag) => {
-    setTag(newTag);
+  const [category, setCategory] = useState("All");
+  const handleTagChange = (newCategory) => {
+    setCategory(newCategory);
   };
 
   const filteredProjects = projectsData.filter((project) =>
-    project.tags.includes(tag)
+    project.categories.includes(category)
   );
 
   return (
@@ -68,26 +71,26 @@ const ProjectsSection = () => {
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectsTag
+        <ProjectsCategoryButton
           onClick={handleTagChange}
-          tag="All"
-          isSelected={tag === "All"}
-        ></ProjectsTag>
-        <ProjectsTag
+          category="All"
+          isSelected={category === "All"}
+        ></ProjectsCategoryButton>
+        <ProjectsCategoryButton
           onClick={handleTagChange}
-          tag="Web"
-          isSelected={tag === "Web"}
-        ></ProjectsTag>
-        <ProjectsTag
+          category="Web"
+          isSelected={category === "Web"}
+        ></ProjectsCategoryButton>
+        <ProjectsCategoryButton
           onClick={handleTagChange}
-          tag="Mobile"
-          isSelected={tag === "Mobile"}
-        ></ProjectsTag>
-        <ProjectsTag
+          category="Mobile"
+          isSelected={category === "Mobile"}
+        ></ProjectsCategoryButton>
+        <ProjectsCategoryButton
           onClick={handleTagChange}
-          tag="React"
-          isSelected={tag === "React"}
-        ></ProjectsTag>
+          category="React"
+          isSelected={category === "React"}
+        ></ProjectsCategoryButton>
       </div>
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project) => (

@@ -19,13 +19,13 @@ const Hero = () => {
               "A full stack Web Developer",
               1000,
               "Welcome to my portfolio!",
-              1000,
+              5000,
             ]}
             wrapper="span"
             className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl"
             style={{ display: "inline-block" }}
             speed={50}
-            repeat={0}
+            repeat={Infinity}
           />
 
           <div>
