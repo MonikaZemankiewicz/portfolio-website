@@ -12,7 +12,6 @@ const LavaLamp = () => {
           <div className="blob"></div>
           <div className="blob"></div>
           <div className="blob"></div>
-          <div className="blob"></div>
           <div className="blob top"></div>
           <div className="blob bottom"></div>
         </div>

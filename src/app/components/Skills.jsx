@@ -29,8 +29,8 @@ const SKILLS_DATA = [
 
 const Skills = () => {
   return (
-    <div>
-      <h2 className="text-5xl text-center font-bold mb-4">
+    <div className="mb-60">
+      <h2 className="text-4xl text-center font-bold mb-4">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
           Skills
         </span>

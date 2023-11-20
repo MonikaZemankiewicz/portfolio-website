@@ -5,6 +5,8 @@ import AboutSection from "./components/AboutSection";
 import Skills from "./components/Skills";
 import ScrollingHeader from "./components/ScrollingHeader";
 import LavaLamp from "./components/LavaLamp";
+import ProjectsSection from "./components/ProjectsSection";
+import SkillsChart from "./components/SkillsChart";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
         <AboutSection></AboutSection>
         {/* <hr className="mt-24 mb-12"></hr> */}
         <Skills></Skills>
+        <SkillsChart></SkillsChart>
+        <ProjectsSection></ProjectsSection>
         <div className="mb-20"></div>
         <ScrollingHeader></ScrollingHeader>
       </div>
