@@ -22,7 +22,7 @@ export default function Home() {
         <AboutSection></AboutSection>
         {/* <hr className="mt-24 mb-12"></hr> */}
         <Skills></Skills>
-        <SkillsChart></SkillsChart>
+        {/* <SkillsChart></SkillsChart> */}
         <ProjectsSection></ProjectsSection>
         <div className="mb-20"></div>
         <ScrollingHeader></ScrollingHeader>
