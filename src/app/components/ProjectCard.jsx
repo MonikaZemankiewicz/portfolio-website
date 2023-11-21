@@ -2,7 +2,14 @@ import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const ProjectCard = ({ title, description, image, gitURL, previewURL }) => {
+const ProjectCard = ({
+  title,
+  description,
+  image,
+  gitURL,
+  previewURL,
+  tags,
+}) => {
   return (
     <div className="flex flex-col">
       <div
@@ -18,7 +25,7 @@ const ProjectCard = ({ title, description, image, gitURL, previewURL }) => {
             href={gitURL}
             rel="noopener noreferrer"
             target="_blank"
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            className="h-14 w-14 mr-6 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
           >
             <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white"></CodeBracketIcon>
           </Link>
@@ -32,9 +39,16 @@ const ProjectCard = ({ title, description, image, gitURL, previewURL }) => {
           </Link>
         </div>
       </div>
-      <div className="grow text-white rounded-b-xl bg-[#181818] py-6 px-4">
+      <div className="grow text-white rounded-b-xl bg-[#181818] py-6 px-4 flex flex-col">
         <h5 className="font-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
+        <p className="text-[#ADB7BE] mb-6">{description}</p>
+        <div className="mt-auto">
+          {tags.map((tag) => (
+            <span className="rounded-md px-3 py-1.5 text-sm text-[#f4f3f3b1] bg-[#cecccc1b] mr-2">
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );

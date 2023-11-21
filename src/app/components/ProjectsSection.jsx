@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     gitURL: "https://github.com/MonikaZemankiewicz/ArtistPortfolio",
     previewURL: "https://zemankiewicz-art.netlify.app/",
-    techStack: ["Jamstack", "React", "Contentful", "Netlify"],
+    tags: ["Jamstack", "React", "Contentful", "Netlify"],
     categories: ["React", "NextJS"],
   },
   {
@@ -23,7 +23,7 @@ const projectsData = [
     image: "/images/projects/2.png",
     gitURL: "",
     previewURL: "",
-    techStack: ["React", "Django", "360 Media", "Netlify"],
+    tags: ["React", "Django", "360 Media", "Netlify"],
     categories: ["React", "Web"],
   },
   {
@@ -33,6 +33,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     gitURL: "",
     previewURL: "",
+    tags: ["React", "Django", "360 Media", "Netlify"],
     categories: ["React", "NextJS"],
   },
   {
@@ -42,6 +43,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     gitURL: "",
     previewURL: "",
+    tags: ["React", "Django", "360 Media", "Netlify"],
     categories: ["React", "NextJS"],
   },
   {
@@ -51,6 +53,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     gitURL: "",
     previewURL: "",
+    tags: ["React", "Django", "360 Media", "Netlify"],
     categories: ["React", "NextJS"],
   },
 ];

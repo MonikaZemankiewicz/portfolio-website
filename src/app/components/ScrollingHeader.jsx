@@ -77,8 +77,8 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 export default function ScrollingHeader() {
   return (
     <section className="scrolling_header w-48 h-48">
-      <ParallaxText baseVelocity={-5}>Projects </ParallaxText>
-      <ParallaxText baseVelocity={5}>About me</ParallaxText>
+      <ParallaxText baseVelocity={-5}>Contact me</ParallaxText>
+      <ParallaxText baseVelocity={5}>Contact me</ParallaxText>
     </section>
   );
 }

@@ -110,14 +110,14 @@ h1 {
 html {
   scroll-snap-type: y mandatory;
 }
-/* 
+
 .scrolling_header {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   -o-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
-} */
+}
 
 /* Remove scrollbar  */
 
