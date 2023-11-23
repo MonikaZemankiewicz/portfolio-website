@@ -8,7 +8,7 @@ export default function AnimationOnScroll({
   classNameNotInView,
 }) {
   return (
-    <InView /*triggerOnce*/ threshold={1}>
+    <InView /*triggerOnce*/ threshold={0.5}>
       {({ inView, ref, entry }) => (
         <div
           ref={ref}

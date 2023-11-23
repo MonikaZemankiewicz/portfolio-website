@@ -52,8 +52,8 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white mt-48 flex items-center">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16<">
+    <section className="text-white md:mt-48 flex items-center">
+      <div className="mt-24 md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16<">
         <Image
           alt="about image"
           src="/images/about-img.png"
