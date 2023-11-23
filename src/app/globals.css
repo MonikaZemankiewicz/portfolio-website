@@ -127,64 +127,6 @@ html {
 }
 
 /* Background animation */
-/* 
-@keyframes move {
-  100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
-  }
-}
-
-.background_item {
-  width: 20vmin;
-  height: 20vmin;
-  border-radius: 20vmin;
-  backface-visibility: hidden;
-  position: absolute;
-  animation: move;
-  animation-duration: 45;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(510pxx);
-  filter: blur(10px);
-  background: rgb(59, 130, 252);
-  background: linear-gradient(
-    144deg,
-    rgba(59, 130, 252, 0.2) 0%,
-    rgba(192, 132, 252, 0.2) 100%
-  );
-  z-index: 0;
-}
-
-.background_item:nth-child(1) {
-  top: 58%;
-  left: 45%;
-  animation-duration: 48s;
-  animation-delay: -27s;
-  transform-origin: -16vw -8vh;
-  width: 5vmin;
-  height: 5vmin;
-}
-.background_item:nth-child(2) {
-  top: 86%;
-  left: 79%;
-  animation-duration: 30s;
-  animation-delay: -29s;
-  transform-origin: 18vw -21vh;
-  width: 20vmin;
-  height: 20vmin;
-}
-.background_item:nth-child(3) {
-  top: 2%;
-  left: 30%;
-  animation-duration: 41s;
-  animation-delay: -42s;
-  transform-origin: 4vw 22vh;
-  width: 15vmin;
-  height: 15vmin;
-} */
 
 .lamp {
   position: absolute;

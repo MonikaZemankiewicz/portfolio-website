@@ -6,7 +6,6 @@ import Skills from "./components/Skills";
 import ScrollingHeader from "./components/ScrollingHeader";
 import LavaLamp from "./components/LavaLamp";
 import ProjectsSection from "./components/ProjectsSection";
-import SkillsChart from "./components/SkillsChart";
 
 export default function Home() {
   return (

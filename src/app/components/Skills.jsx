@@ -37,7 +37,7 @@ const SKILLS_DATA = [
 
 const Skills = () => {
   return (
-    <div className="mb-60">
+    <div className="mt-24 mb-60">
       <h2 className=" text-center text-4xl font-bold text-white mb-4">
         Skills
       </h2>

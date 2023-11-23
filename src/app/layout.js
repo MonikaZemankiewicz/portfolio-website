@@ -1,17 +1,7 @@
-import { Inter, Vina_Sans, Oswald, Source_Serif_4 } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-
-// const vina_sans = Vina_Sans({
-//   weight: "400",
-//   subsets: ["latin"],
-// });
-
-// const oswald = Oswald({
-//   weight: "400",
-//   subsets: ["latin"],
-// });
 
 export const metadata = {
   title: "Create Next App",
