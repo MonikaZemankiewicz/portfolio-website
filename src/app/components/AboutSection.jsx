@@ -5,29 +5,14 @@ import { useState, useTransition } from "react";
 import TabButton from "./TabButton";
 
 const TAB_DATA = [
-  // {
-  //   title: "Skills",
-  //   id: "skills",
-  //   content: (
-  //     <ul className="list-disc pl-2">
-  //       <li>HTML</li>
-  //       <li>CSS</li>
-  //       <li>JavaScript</li>
-  //       <li>React</li>
-  //       <li>GatsbyJS</li>
-  //       <li>Python</li>
-  //       <li>Django</li>
-  //     </ul>
-  //   ),
-  // },
   {
     title: "Education",
     id: "education",
     content: (
       <ul className="list-disc pl-10">
         <li className="mb-2">
-          Bachelor's Master's Degree in Computer Science (Wroclaw University of
-          Science and Technology) | 2017- 2021, 2021-2023
+          Bachelor&apos;s Master&apos;s Degree in Computer Science (Wroclaw
+          University of Science and Technology) | 2017- 2021, 2021-2023
         </li>
         <li className="mb-2">
           Erasmus Exchange in Almeria, Spain | Universidad de Almeria |
@@ -49,7 +34,7 @@ const TAB_DATA = [
           Software Developer/Trainee | Volvo Group | 2021-2022
         </li>
         <li className="mb-2">
-          Software Development Intern | 2SI | September 2020{" "}
+          Software Development Intern | 2SI | September 2020
         </li>
       </ul>
     ),
