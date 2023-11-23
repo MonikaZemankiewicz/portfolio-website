@@ -43,8 +43,11 @@ const ProjectCard = ({
         <h5 className="font-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE] mb-6">{description}</p>
         <div className="mt-auto">
-          {tags.map((tag) => (
-            <span className="rounded-md px-3 py-1.5 text-sm text-[#f4f3f3b1] bg-[#cecccc1b] mr-2">
+          {tags.map((tag, index) => (
+            <span
+              key={index}
+              className="rounded-md px-3 py-1.5 text-sm text-[#f4f3f3b1] bg-[#cecccc1b] mr-2"
+            >
               {tag}
             </span>
           ))}

@@ -12,7 +12,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-10">
         <li className="mb-2">
           Bachelor&apos;s Master&apos;s Degree in Computer Science (Wroclaw
-          University of Science and Technology) | 2017- 2021, 2021-2023
+          University of Science and Technology) | 2017-2021, 2021-2023
         </li>
         <li className="mb-2">
           Erasmus Exchange in Almeria, Spain | Universidad de Almeria |
@@ -63,11 +63,12 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a Computer Science Master's graduate from Wroclaw University of
-            Science and Technology, with special interest in web development. I
-            am passionate about creating user-friendly websites using the latest
-            technologies. I like to learn continuously and keep up-to-date with
-            the latest trends and best practices in the industry.
+            I am a Computer Science Master&apos;s graduate from Wroclaw
+            University of Science and Technology, with special interest in web
+            development. I am passionate about creating user-friendly websites
+            using the latest technologies. I like to learn continuously and keep
+            up-to-date with the latest trends and best practices in the
+            industry.
           </p>
           <div className="flex flex-row justify-start mt-8">
             {/* <TabButton
