@@ -42,11 +42,11 @@ const ProjectCard = ({
       <div className="grow text-white rounded-b-xl bg-[#181818] py-6 px-4 flex flex-col">
         <h5 className="font-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE] mb-6">{description}</p>
-        <div className="mt-auto">
+        <div className="mt-auto flex flex-wrap">
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="rounded-md px-3 py-1.5 text-sm text-[#f4f3f3b1] bg-[#cecccc1b] mr-2"
+              className="rounded-md mt-2 px-3 py-1.5 text-sm text-[#f4f3f3b1] bg-[#cecccc1b] mr-2"
             >
               {tag}
             </span>
