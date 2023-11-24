@@ -22,7 +22,7 @@ const ContactSection = () => {
       </div>
     </section>
   ) : (
-    <section className="text-[#ebede8] flex m-auto my-12 py-24 max-w-3xl gap-6">
+    <section className="text-[#ebede8] flex flex-col sm:flex-row justify-center m-auto my-12 py-24 max-w-3xl lg:gap-6">
       <ScrollingHeader></ScrollingHeader>
       <form onSubmit={handleSubmit} className="grow flex flex-col">
         <div className="mb-6">

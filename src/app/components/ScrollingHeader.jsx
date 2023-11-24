@@ -80,8 +80,8 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function ScrollingHeader() {
   return (
-    <div className="flex items-center">
-      <section className="scrolling_header w-48 h-48">
+    <div className="flex items-center justify-center pt-10">
+      <section className="scrolling_header w-full mb-12 sm:mb-0 sm:w-52 sm:h-52">
         <ParallaxText baseVelocity={-5}>Contact me</ParallaxText>
         <ParallaxText baseVelocity={5}>Contact me</ParallaxText>
       </section>
