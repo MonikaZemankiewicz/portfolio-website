@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import ScrollingHeader from "./components/ScrollingHeader";
 import LavaLamp from "./components/LavaLamp";
 import ProjectsSection from "./components/ProjectsSection";
+import ContactSection from "./components/ContactSection";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
         {/* <SkillsChart></SkillsChart> */}
         <ProjectsSection></ProjectsSection>
         <div className="mb-20"></div>
-        <ScrollingHeader></ScrollingHeader>
+        <ContactSection></ContactSection>
       </div>
     </main>
   );

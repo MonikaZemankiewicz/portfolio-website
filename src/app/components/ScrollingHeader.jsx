@@ -69,6 +69,10 @@ function ParallaxText({ children, baseVelocity = 100 }) {
         <span className={vina_sans.className}>{children} </span>
         <span className={vina_sans.className}>{children} </span>
         <span className={vina_sans.className}>{children} </span>
+        {/* <span>{children} </span>
+        <span>{children} </span>
+        <span>{children} </span>
+        <span>{children} </span> */}
       </motion.div>
     </div>
   );
@@ -76,9 +80,11 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function ScrollingHeader() {
   return (
-    <section className="scrolling_header w-48 h-48">
-      <ParallaxText baseVelocity={-5}>Contact me</ParallaxText>
-      <ParallaxText baseVelocity={5}>Contact me</ParallaxText>
-    </section>
+    <div className="flex items-center">
+      <section className="scrolling_header w-48 h-48">
+        <ParallaxText baseVelocity={-5}>Contact me</ParallaxText>
+        <ParallaxText baseVelocity={5}>Contact me</ParallaxText>
+      </section>
+    </div>
   );
 }

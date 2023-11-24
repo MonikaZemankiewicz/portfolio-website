@@ -64,7 +64,7 @@ const ProjectsSection = () => {
       <h2 className="text-4xl text-white text-center font-bold mb-4">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex justify-center items-center gap-2 py-6">
         <ProjectsCategoryButton
           onClick={handleTagChange}
           category="All"
