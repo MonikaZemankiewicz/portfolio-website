@@ -52,7 +52,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white md:mt-48 flex items-center">
+    <section className="text-white lg:mt-48 flex items-center">
       <div className="mt-24 md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16<">
         <Image
           alt="about image"
@@ -60,7 +60,7 @@ const AboutSection = () => {
           width={500}
           height={500}
         ></Image>
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+        <div className="mt-12 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             I am a Computer Science Master&apos;s graduate from Wroclaw
