@@ -170,13 +170,22 @@ html {
   top: -2%;
   left: 0;
 }
+
 .blob.bottom {
   border-radius: 40%;
   width: 100%;
   height: 4.5%;
   bottom: -3%;
   left: 0;
+  display: none;
 }
+
+@media screen and (min-width: 500px) {
+  .blob.bottom {
+    display: block;
+  }
+}
+
 .blob:nth-child(1) {
   width: 200px;
   height: 200px;
