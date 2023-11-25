@@ -147,6 +147,7 @@ html {
 }
 
 .lava {
+  -webkit-filter: url("#goo");
   filter: url("#goo");
   position: absolute;
   height: 100%;
