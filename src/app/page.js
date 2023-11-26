@@ -7,6 +7,7 @@ import ScrollingHeader from "./components/ScrollingHeader";
 import LavaLamp from "./components/LavaLamp";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <div className="mb-20"></div>
         <ContactSection></ContactSection>
       </div>
+      <Footer></Footer>
     </main>
   );
 }
