@@ -29,16 +29,14 @@ const SocialIcons = () => {
   return (
     <div className="flex flex-row gap-6 justify-center">
       {socials.map((social) => (
-        <div className="rounded-full bg-gradient-to-br from-blue-500 to-purple-500 opacity-80">
-          <SocialIcon
-            key={social.id}
-            url={social.url}
-            network={social.network}
-            label={social.name}
-            bgColor="transparent"
-            fgColor="#111111"
-          ></SocialIcon>
-        </div>
+        <SocialIcon
+          key={social.id}
+          url={social.url}
+          network={social.network}
+          label={social.name}
+          bgColor="#cecccc1b"
+          fgColor="#c7c5c9"
+        ></SocialIcon>
       ))}
     </div>
   );
