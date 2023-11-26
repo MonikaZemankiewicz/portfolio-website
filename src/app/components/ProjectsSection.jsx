@@ -21,7 +21,7 @@ const projectsData = [
     description:
       "Website for sharing 360 images, videos and virtual tours with built in 360 image viewer. Preview not available due to the end of free hosting period. Screenshots of the website are available in the README file. ",
     image: "/images/projects/2.png",
-    gitURL: "",
+    gitURL: "https://github.com/MonikaZemankiewicz/virtualtour-frontend",
     previewURL: "",
     tags: ["React", "Django", "360 Media", "Netlify"],
     categories: ["All", "Web"],
@@ -32,7 +32,7 @@ const projectsData = [
     description:
       "Android application with a tabata timer. It allows the users to create custom workouts from existing exercises, add new exercises or use ready workout plans. Existing exercises can be searched by the name or category.",
     image: "/images/projects/3.png",
-    gitURL: "",
+    gitURL: "https://github.com/MonikaZemankiewicz/TabataManager",
     previewURL: "",
     tags: ["Android"],
     categories: ["All", "Mobile"],
