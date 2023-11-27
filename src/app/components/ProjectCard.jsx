@@ -1,6 +1,7 @@
 import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 
 const ProjectCard = ({
   title,
@@ -44,6 +45,18 @@ const ProjectCard = ({
         </div>
       </div>
       <div className="grow text-white rounded-b-xl bg-[#181818] py-6 px-4 flex flex-col">
+        <div className="sm:hidden flex flex-row gap-3 justify-left mb-3">
+          {gitURL ? (
+            <a href={gitURL}>
+              <FaGithub />
+            </a>
+          ) : null}
+          {previewURL ? (
+            <a href={previewURL}>
+              <FaGlobe />
+            </a>
+          ) : null}
+        </div>
         <h5 className="font-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE] mb-6">{description}</p>
         <div className="mt-auto flex flex-wrap">

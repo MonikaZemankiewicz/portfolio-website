@@ -43,7 +43,7 @@ const projectsData = [
     description: "This website :)",
     image: "/images/projects/4.png",
     gitURL: "",
-    previewURL: "",
+    previewURL: "https://portfolio-website-two-henna.vercel.app/",
     tags: ["React", "NextJS", "Tailwind CSS", "Vercel"],
     categories: ["All", "Web"],
   },
