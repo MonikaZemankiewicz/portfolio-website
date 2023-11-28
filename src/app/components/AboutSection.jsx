@@ -11,7 +11,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-10">
         <li className="mb-2">
-          Bachelor&apos;s Master&apos;s Degree in Computer Science (Wroclaw
+          Bachelor&apos;s and Master&apos;s Degree in Computer Science (Wroclaw
           University of Science and Technology) | 2017-2021, 2021-2023
         </li>
         <li className="mb-2">
@@ -71,12 +71,6 @@ const AboutSection = () => {
             industry.
           </p>
           <div className="flex flex-row justify-start mt-8">
-            {/* <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              Skills
-            </TabButton> */}
             <TabButton
               selectTab={() => handleTabChange("experience")}
               active={tab === "experience"}
