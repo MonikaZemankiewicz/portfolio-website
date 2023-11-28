@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -29,14 +30,22 @@ const Hero = () => {
           />
 
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-secondary-500 to-primary-400 hover:bg-slate-200 text-black">
+            <Link
+              href="/#contact"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-secondary-500 to-primary-400 hover:bg-slate-200 text-black"
+            >
               Contact me
-            </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-secondary-500 to-primary-400 hover:bg-slate-800 text-white mt-3">
+            </Link>
+            <Link
+              href="https://www.canva.com/design/DAF1aVA4wX8/X8H85iPB1ZCOIWXQFXIeVw/view?utm_content=DAF1aVA4wX8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-secondary-500 to-primary-400 hover:bg-slate-800 text-white mt-3"
+            >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Check my CV
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-8 sm:mt-4 lg:mt-0">
