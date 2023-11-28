@@ -52,7 +52,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white lg:mt-48 flex items-center">
+    <section className="text-white lg:mt-48 flex items-center" id="about">
       <div className="mt-24 md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16<">
         <Image
           alt="about image"

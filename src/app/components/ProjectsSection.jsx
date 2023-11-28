@@ -2,7 +2,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectsCategoryButton from "./ProjectsCategoryButton";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const projectsData = [
   {
@@ -60,7 +60,7 @@ const ProjectsSection = () => {
   );
 
   return (
-    <>
+    <div className="pt-24" id="projects">
       <h2 className="text-4xl text-white text-center font-bold mb-4">
         My Projects
       </h2>
@@ -86,7 +86,7 @@ const ProjectsSection = () => {
           <ProjectCard key={project.id} {...project}></ProjectCard>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

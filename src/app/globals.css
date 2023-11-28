@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Skills cards */
+
 @supports (
   (
       -webkit-backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%)
@@ -9,15 +11,6 @@
     or
     (backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%))
 ) {
-  /* .skill_card {
-    border-radius: 15px;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-    font-size: 2rem;
-    height: fit-content;
-    overflow: hidden;
-    margin-top: 1rem;
-  } */
-
   .skill_card:before {
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
@@ -26,9 +19,6 @@
     position: absolute;
     width: 100%;
   }
-}
-
-h1 {
 }
 
 .isInView > div {
@@ -101,10 +91,10 @@ h1 {
   -webkit-font-smoothing: antialiased;
   color: transparent;
   background-clip: text;
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  /* background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
   --tw-gradient-to: rgba(129, 42, 175, 0.784) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); */
 }
 
 html {
@@ -128,7 +118,7 @@ html {
   width: 0;
 }
 
-/* Background animation */
+/* Background lava lamp animation */
 
 .lamp {
   position: absolute;

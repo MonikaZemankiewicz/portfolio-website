@@ -65,10 +65,27 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   return (
     <div className="parallax">
       <motion.div className="scroller" style={{ x }}>
-        <span className={vina_sans.className}>{children} </span>
-        <span className={vina_sans.className}>{children} </span>
-        <span className={vina_sans.className}>{children} </span>
-        <span className={vina_sans.className}>{children} </span>
+        <div className={vina_sans.className}>
+          <span className="bg-gradient-to-r from-secondary-500 to-primary-600">
+            {children}
+          </span>
+        </div>
+        <div className={vina_sans.className}>
+          <span className="bg-gradient-to-r from-secondary-500 to-primary-600">
+            {children}
+          </span>
+        </div>
+        <div className={vina_sans.className}>
+          <span className="bg-gradient-to-r from-secondary-500 to-primary-600">
+            {children}
+          </span>
+        </div>
+        <div className={vina_sans.className}>
+          <span className="bg-gradient-to-r from-secondary-500 to-primary-600">
+            {children}
+          </span>
+        </div>
+
         {/* <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>

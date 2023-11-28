@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectsCategoryButton = ({ category, onClick, isSelected }) => {
   const buttonsStyles = isSelected
-    ? "border-purple-500"
+    ? "border-primary-400"
     : "border-slate-600 hover:border-white";
   return (
     <button
