@@ -80,7 +80,7 @@ const ProjectsSection = () => {
   );
 
   return (
-    <div className="pt-24" id="projects">
+    <div className="pt-24 mb-6 md:mb-20" id="projects">
       <h2 className="text-4xl text-white text-center font-bold mb-4">
         My Projects
       </h2>

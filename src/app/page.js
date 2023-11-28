@@ -15,17 +15,10 @@ export default function Home() {
       <Navbar></Navbar>
       <LavaLamp></LavaLamp>
       <div className="container relative z-2 mt-24 mx-auto px-12 py-4">
-        {/* <span className="background_item"></span>
-        <span className="background_item"></span>
-        <span className="background_item"></span> */}
         <Hero></Hero>
-        {/* <hr className="mt-24 mb-12 "></hr> */}
         <AboutSection></AboutSection>
-        {/* <hr className="mt-24 mb-12"></hr> */}
         <Skills></Skills>
-        {/* <SkillsChart></SkillsChart> */}
         <ProjectsSection></ProjectsSection>
-        <div className="mb-20"></div>
         <ContactSection></ContactSection>
       </div>
       <Footer></Footer>

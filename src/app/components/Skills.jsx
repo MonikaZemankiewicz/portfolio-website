@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { useState, useRef, useEffect } from "react";
 import AnimationOnScroll from "../utils/AnimationOnScroll";
 import Image from "next/image";
 
