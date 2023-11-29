@@ -32,6 +32,8 @@ const SocialIcons = () => {
         <SocialIcon
           key={social.id}
           url={social.url}
+          rel="noopener noreferrer"
+          target="_blank"
           network={social.network}
           label={social.name}
           bgColor="#cecccc1b"

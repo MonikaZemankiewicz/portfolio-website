@@ -47,12 +47,12 @@ const ProjectCard = ({
       <div className="grow text-white rounded-b-xl bg-[#181818] py-6 px-4 flex flex-col">
         <div className="sm:hidden flex flex-row gap-3 justify-left mb-3">
           {gitURL ? (
-            <a href={gitURL}>
+            <a href={gitURL} rel="noopener noreferrer" target="_blank">
               <FaGithub />
             </a>
           ) : null}
           {previewURL ? (
-            <a href={previewURL}>
+            <a href={previewURL} rel="noopener noreferrer" target="_blank">
               <FaGlobe />
             </a>
           ) : null}
