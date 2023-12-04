@@ -5,15 +5,15 @@ const LavaLamp = () => {
     <>
       <div className="lamp">
         <div className="lava">
-          <svg className="blob"></svg>
-          <svg className="blob"></svg>
-          <svg className="blob"></svg>
-          <svg className="blob"></svg>
-          <svg className="blob"></svg>
-          <svg className="blob"></svg>
-          <svg className="blob"></svg>
-          <svg className="blob top"></svg>
-          <svg className="blob bottom"></svg>
+          <svg className="blob" />
+          <svg className="blob" />
+          <svg className="blob" />
+          <svg className="blob" />
+          <svg className="blob" />
+          <svg className="blob" />
+          <svg className="blob" />
+          <svg className="blob top" />
+          <svg className="blob bottom" />
         </div>
       </div>
       <svg

@@ -63,7 +63,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      {navOpen ? <MenuOverlay links={navbarLinks}></MenuOverlay> : null}
+      {navOpen && <MenuOverlay links={navbarLinks} />}
     </nav>
   );
 };

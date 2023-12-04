@@ -22,7 +22,7 @@ const ProjectCard = ({
         }}
       >
         <div className="overlay items-center gap-6 justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
-          {gitURL ? (
+          {gitURL && (
             <Link
               href={gitURL}
               rel="noopener noreferrer"
@@ -31,8 +31,8 @@ const ProjectCard = ({
             >
               <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white"></CodeBracketIcon>
             </Link>
-          ) : null}
-          {previewURL ? (
+          )}
+          {previewURL && (
             <Link
               href={previewURL}
               rel="noopener noreferrer"
@@ -41,21 +41,21 @@ const ProjectCard = ({
             >
               <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white"></EyeIcon>
             </Link>
-          ) : null}
+          )}
         </div>
       </div>
       <div className="grow text-white rounded-b-xl bg-[#181818] py-6 px-4 flex flex-col">
         <div className="sm:hidden flex flex-row gap-3 justify-left mb-3">
-          {gitURL ? (
+          {gitURL && (
             <a href={gitURL} rel="noopener noreferrer" target="_blank">
               <FaGithub />
             </a>
-          ) : null}
-          {previewURL ? (
+          )}
+          {previewURL && (
             <a href={previewURL} rel="noopener noreferrer" target="_blank">
               <FaGlobe />
             </a>
-          ) : null}
+          )}
         </div>
         <h5 className="font-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE] mb-6">{description}</p>
