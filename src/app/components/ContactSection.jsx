@@ -4,8 +4,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import ScrollingHeader from "./ScrollingHeader";
 
 const ContactSection = () => {
-  const [state, handleSubmit] = useForm("xdorroaq");
-
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM_ID);
   return state.succeeded ? (
     <section
       className="flex m-auto my-12 py-24 max-w-3xl gap-6 items-center justify-center"
@@ -13,13 +12,12 @@ const ContactSection = () => {
     >
       <div>
         <h1 className="text-white text-center mb-6 text-2xl sm:text-3xl font-bold">
-          Thank you for your{" "}
+          Thank you for your
           <span className="text-transparent text-2xl sm:text-3xl bg-clip-text bg-gradient-to-r from-secondary-500 to-primary-600 font-bold">
             submission!
           </span>
         </h1>
         <h2 className="text-white text-center mb-6  text-sm sm:text-lg">
-          {" "}
           I will get back to you as soon as possible 📬
         </h2>
       </div>
