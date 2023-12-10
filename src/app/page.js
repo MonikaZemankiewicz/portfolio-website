@@ -3,7 +3,6 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import Skills from "./components/Skills";
-import ScrollingHeader from "./components/ScrollingHeader";
 import LavaLamp from "./components/LavaLamp";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
