@@ -12,7 +12,7 @@ const ContactSection = () => {
     >
       <div>
         <h1 className="text-white text-center mb-6 text-2xl sm:text-3xl font-bold">
-          Thank you for your
+          Thank you for your{" "}
           <span className="text-transparent text-2xl sm:text-3xl bg-clip-text bg-gradient-to-r from-secondary-500 to-primary-600 font-bold">
             submission!
           </span>
