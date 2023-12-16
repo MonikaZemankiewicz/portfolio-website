@@ -6,15 +6,15 @@ import Image from "next/image";
 const SKILLS_DATA = [
   {
     title: "html",
-    img: "/images/html.png",
+    img: "/images/html.webp",
   },
   {
     title: "css",
-    img: "/images/css.png",
+    img: "/images/css.webp",
   },
   {
     title: "js",
-    img: "/images/js.png",
+    img: "/images/js.webp",
   },
   {
     title: "python",
@@ -26,7 +26,7 @@ const SKILLS_DATA = [
   },
   {
     title: "django",
-    img: "/images/django.png",
+    img: "/images/django.webp",
   },
   {
     title: "sql",

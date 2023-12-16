@@ -51,7 +51,7 @@ const Hero = () => {
         <div className="col-span-5 place-self-center mt-8 sm:mt-4 lg:mt-0">
           <div className="rounded-full bg-[#181818d5] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-img3.png"
+              src="/images/hero-img3.webp"
               alt="hero image"
               width={300}
               height={300}
