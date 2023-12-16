@@ -89,17 +89,17 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           category="All"
           isSelected={category === "All"}
-        ></ProjectsCategoryButton>
+        />
         <ProjectsCategoryButton
           onClick={handleTagChange}
           category="Web"
           isSelected={category === "Web"}
-        ></ProjectsCategoryButton>
+        />
         <ProjectsCategoryButton
           onClick={handleTagChange}
           category="Mobile"
           isSelected={category === "Mobile"}
-        ></ProjectsCategoryButton>
+        />
       </div>
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project) => (
