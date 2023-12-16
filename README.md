@@ -1,6 +1,6 @@
 ## Next.js Portfolio Website
 
-https://portfolio-website-two-henna.vercel.app/
+https://www.monikazemankiewicz.pl/
 
 Animations done with framer motion and react-type-animation.
 
