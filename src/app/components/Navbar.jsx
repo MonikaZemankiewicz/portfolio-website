@@ -39,6 +39,7 @@ const Navbar = () => {
         <div className="mobile-menu block md:hidden">
           {!navOpen ? (
             <button
+              aria-label="open menu"
               onClick={() => setNavOpen(true)}
               className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
             >
@@ -46,6 +47,7 @@ const Navbar = () => {
             </button>
           ) : (
             <button
+              aria-label="close menu"
               onClick={() => setNavOpen(false)}
               className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
             >

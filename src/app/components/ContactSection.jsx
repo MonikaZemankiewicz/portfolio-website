@@ -67,6 +67,7 @@ const ContactSection = () => {
         </div>
         <button
           type="submit"
+          aria-label="submit"
           disabled={state.submitting}
           className="bg-gradient-to-r from-secondary-500 to-primary-600 hover:bg-secondary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
         >

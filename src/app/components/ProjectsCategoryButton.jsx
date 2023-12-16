@@ -6,6 +6,7 @@ const ProjectsCategoryButton = ({ category, onClick, isSelected }) => {
     : "border-slate-600 hover:border-white";
   return (
     <button
+      aria-label="categories"
       className={`rounded-full border-2  px-6 py-3 text-xl cursor-pointer + ${buttonsStyles}`}
       onClick={() => onClick(category)}
     >
