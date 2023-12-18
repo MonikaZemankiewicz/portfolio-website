@@ -91,10 +91,6 @@
   -webkit-font-smoothing: antialiased;
   color: transparent;
   background-clip: text;
-  /* background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgba(129, 42, 175, 0.784) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); */
 }
 
 html {
@@ -149,7 +145,6 @@ html {
 .blob {
   border-radius: 50%;
   background-image: linear-gradient(-206deg, #ff9298 0%, #ff008d 100%);
-  /* background-image: linear-gradient(-206deg, #ff9298 0%, #e4008e 100%); */
   position: absolute;
 }
 
